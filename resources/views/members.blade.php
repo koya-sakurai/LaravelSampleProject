@@ -21,6 +21,15 @@
                 @endforeach
             </table>
         </div>
+        <div>
+            <form action="members" method="POST">
+                @csrf
+                <input type="text" name="name" value="" />
+                <input type="text" name="name_kana" value="" />
+                <input type="text" name="email" value="" />
+                <input type="submit" />
+            </form>
+        </div>
         <a href="{{url('/')}}">戻る</a>
     </body>
 </html>
